@@ -1,0 +1,132 @@
+/* *{
+   font-family: 'Goudy Bookletter 1911', serif;   
+} */
+body{
+    background: #000;
+    font-family: 'Chivo Mono', monospace;
+     
+}
+ .sign-up{
+    width: 360px;
+    position: relative;
+    height: 570px;
+    margin: auto;
+    background-color:black;
+    border-radius: 6px;
+    box-shadow: 0 0 50px #0ef;
+    /* text-align: c;     */
+    margin-top: 5%;
+ }
+
+ .login-box{
+   width: 360px;
+   height: 280px;
+   margin: auto;
+   border-radius: 3px;
+   background-color:black;
+   box-shadow: 0 0 50px #0ef;
+  margin-top: 15%;
+ }
+ 
+ 
+ h1{
+    text-align: center;
+    padding-top:15px
+    
+    
+ }
+ form{
+    width:300px;
+    margin-top: 20px;
+    padding-left: 15px;
+ }
+
+ form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+    
+
+ }
+
+ form input{
+    width:100%;
+    padding:10px;
+    border: none;
+    border:1px solid grey;
+    border-radius: 6px;
+    outline:none;
+    
+ }
+ input[type="button"]{
+    width:320px;
+    height:35px;
+    margin-top: 20px;
+    border:none;
+    background-color: #49c1a2;
+    color:white;
+    font-size: 18px;
+ }
+ p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+/* margin-top: 50px; */
+ }
+
+ 
+ .para-2{
+    text-align: center;
+    color:blue;
+    font-size: 15px;
+    margin-top: -10px;
+ }
+ .para-2 a{
+    color:#49c1a2;
+ }
+
+/* Style for the search container */
+.search-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 10px;
+   background-color: #f1f1f1;
+   border-radius: 25px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the search input */
+#search-input {
+   flex: 1;
+   padding: 20px;
+   border: none;
+   outline:invert;
+   font-size: 16px;
+   border-radius: 30px 0 0 30px;
+}
+
+/* Style for the search button */
+#search-button {
+   background-color: #007bff;
+   border: none;
+   color: #fff;
+   padding: 15px 20px;
+   border-radius: 0 25px 25px 0;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+#search-button:hover {
+   background-color: #0056b3;
+}
+
+/* Font Awesome icon style */
+.fa-search {
+   font-size: 30px;
+}

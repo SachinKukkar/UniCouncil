@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA program</title>
+       <link rel="stylesheet" href="program_styles.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: #171616;">
+  <nav class="topnav">
+    <div class="nav-logo">
+        <img src="logo-removebg-preview.png" alt="" />
+    </div>
+    <div class="nav-items">
+        <div>
+            <a href="#home">Home</a>
+        </div>
+        <div>
+            <a href="#about">About</a>
+        </div>
+        <div>
+            <div class="prog">
+                <select name="Programs" id="programs" onchange="redirectToPage()">
+                    <option value="">Programs</option>
+                    <option value="bachelor" data-url="Bachelors.html">Bachelors</option>
+                    <option value="master" data-url="Masters.html">Masters</option>
+                    <option value="mba" data-url="MBAs.html">MBAs</option>
+                    <option value="phd" data-url="PhDs.html">PhDs</option>
+                </select>
+            </div>
+            
+            <script>
+                function redirectToPage() {
+                    var selectElement = document.getElementById("programs");
+                    var selectedOption = selectElement.options[selectElement.selectedIndex];
+            
+                    if (selectedOption.value && selectedOption.getAttribute("data-url")) {
+                        var url = selectedOption.getAttribute("data-url");
+                        // Redirect to the URL
+                        window.location.href = url;
+                    }
+                }
+            </script>
+            
+        </div>
+        <div>
+            <a href="" class="start" style="padding: 0; margin-top: 18px">
+                <div class="start-here">
+                    <select name="start-here" id="start" onchange="navigate()">
+                        <option value="start" selected>Start Here</option>
+                        <option value="country-guide" data-url="./countries_landing_page_demo/countries.html">Country Guide</option>
+                        <option value="subject-guide">Subject Guide</option>
+                    </select>
+                </div>
+            </a>
+        
+            <!-- Placeholder for the destination of the Country Guide link -->
+            <div id="country-guide-link"></div>
+        
+            <script>
+                // JavaScript function to handle navigation
+                function navigate() {
+                    var selectElement = document.getElementById("start");
+                    var selectedOption = selectElement.options[selectElement.selectedIndex];
+                    
+                    if (selectedOption.value === "country-guide") {
+                        var url = selectedOption.getAttribute("data-url");
+                        // Navigate to the URL
+                        window.location.href = url;
+                    }
+                }
+            </script>
+        </div>
+        
+        <div>
+            <a href="./Contact Us/contactus.html">Contact Us</a>
+        </div>
+        <div>
+            <div class="login">
+                <a href="register.html"><button class="anchor">Login/Register</button></a>
+            </div>
+        </div>
+
+    </div>
+</nav> <h1 style="font-size: 50px; color: white;"><center>Masters in Business Administration (MBA) program</center></h1>
+    <br><br>
+
+<div class="slideshow-container" >
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Oxford .png" style="max-height: 588px;">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Moscow university.png" style="max-height: 588px;">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Harvard.jpg" style="height: 600px;">
+          <div class="text">Caption Three</div>
+        </div>
+          </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        <br><br><br><br>
+        <div >
+            <table class="container">
+                <tr> <th align="left">
+            <h1>Master of Business Administration (M.B.A.)</h1>
+            <i class="fa fa-clock-o" style="font-size:26px"> &nbsp; 2 Years</i><br><br>
+            <i class="fa fa-university" style="font-size:26px"> &nbsp; Harvard Business School</i><br><br>
+            <i class="fa fa-line-chart" style="font-size:26px"> &nbsp; #4 in World Rankings</i><br><br>
+            <i class="fa fa-map-marker" style="font-size:26px"> &nbsp; Cambridge, USA</i></th>
+            <th style="padding-left:235px;"><img src="Harward 2.png" height="300px" alt="LMU.png"></th>
+            </tr></a></table> </a><br><br><br>
+            <table class="container">
+                <tr> <th align="left">
+            <h1 style="padding-right: 70px;"> Masters in Business Administration (MBA)</h1>
+            <i class="fa fa-clock-o" style="font-size:26px"> &nbsp; around 12 Months</i><br><br>
+            <i class="fa fa-university" style="font-size:26px"> &nbsp; University of Cambridge - Judge Business School, Cambridge, England</i><br><br>
+            <i class="fa fa-line-chart" style="font-size:26px"> &nbsp; #2 in World Rankings</i><br><br>
+            <i class="fa fa-map-marker" style="font-size:26px"> &nbsp; Cambridge, England</i></th>
+            <th style="padding-left:142px;"><img src="Cambridge University.jpeg" height="300ox"" width="530px" alt="LMU.png"></th>
+            </tr></table> <br><br><br>
+            <table class="container">
+                <tr> <th align="left">
+            <h1>Master of Business Administration (MBA)</h1>
+            <i class="fa fa-clock-o" style="font-size:26px"> &nbsp; 15-21 Months</i><br><br>
+            <i class="fa fa-university" style="font-size:26px"> &nbsp; London Business School, London, England</i><br><br>
+            <i class="fa fa-line-chart" style="font-size:26px"> &nbsp; #10 in World Rankings</i><br><br>
+            <i class="fa fa-map-marker" style="font-size:26px"> &nbsp; Cambridge, USA</i></th>
+            <th style="padding-left:318px;"><img src="LBS.jpg" height="300px" alt="LMU.png"></th>
+            </tr></table><br><br><br>
+            <table class="container">
+                <tr> <th align="left">
+            <h1>Master of Business Administration (MBA)</h1>
+            <i class="fa fa-clock-o" style="font-size:26px"> &nbsp; 12 Months</i><br><br>
+            <i class="fa fa-university" style="font-size:26px"> &nbsp; Mannheim Business School,Mannheim</i><br><br>
+            <i class="fa fa-line-chart" style="font-size:26px"> &nbsp; #73 in World Rankings</i><br><br>
+            <i class="fa fa-map-marker" style="font-size:26px"> &nbsp; Mannheim, Germany</i></th>
+            <th style="padding-left:400px;"><img src="Mannheim university.png" height="300px" width="530" alt="LMU.png"></th>
+            </tr></table> <br><br><br>
+            <table class="container">
+                <tr> <th align="left">
+            <h1 style="padding-right: 70px;"> Masters of Business Administration (MBA)</h1>
+            <i class="fa fa-clock-o" style="font-size:26px"> &nbsp; 12 Months</i><br><br>
+            <i class="fa fa-university" style="font-size:26px"> &nbsp; ESMT Berlin (European School of Management and Technology)</i><br><br>
+            <i class="fa fa-line-chart" style="font-size:26px"> &nbsp; #1 in Germany for MBA</i><br><br>
+            <i class="fa fa-map-marker" style="font-size:26px"> &nbsp; Berlin, Germany</i></th>
+            <th style="padding-left:142px;"><img src="ESMT.jpg" height="300px" width="530px" alt="LMU.png"></th>
+            </tr></table> <br><br><br>
+            <table class="container">
+                <tr> <th align="left">
+            <h1>Masters in Business Administration (MBA)</h1>
+            <i class="fa fa-clock-o" style="font-size:26px"> &nbsp; 2 years</i><br><br>
+            <i class="fa fa-university" style="font-size:26px"> &nbsp; University of Toronto- Rotman School of Management</i><br><br>
+            <i class="fa fa-line-chart" style="font-size:26px"> &nbsp; #18 in World Rankings</i><br><br>
+            <i class="fa fa-map-marker" style="font-size:26px"> &nbsp; Toronto, Canada</i></th>
+            <th style="padding-left:300px;"><img src="University of Toronto.jpg" height="300px" width="530px" alt="LMU.png"></th>
+            </tr></table> <br><br><br>
+            <table class="container">
+                <tr> <th align="left">
+            <h1 style="padding-right: 70px;"> Master in Business Administration</h1>
+            <i class="fa fa-clock-o" style="font-size:26px"> &nbsp; 1.5-2 years</i><br><br>
+            <i class="fa fa-university" style="font-size:26px"> &nbsp; St. Petersburg State University - Graduate School of Management (GSOM)            </i><br><br>
+            <i class="fa fa-line-chart" style="font-size:26px"> &nbsp; #315 in World Rankings</i><br><br>
+            <i class="fa fa-map-marker" style="font-size:26px"> &nbsp; Saint Petersburg, Russia</i></th>
+            <th style="padding-left:475px;"><img src="GSOM.jpg" height="300px" width="530px" alt="LMU.png"></th>
+            </tr></table> <br><br><br>
+        </div>
+        <footer style="height: 50px; background-color: #555;">
+            <p align="center">&copy; 2024 UniCouncil. All rights reserved.</p>
+        </footer>
+</body>
+</html>
